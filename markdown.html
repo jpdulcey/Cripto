@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Error del modelo de predicción &#8212; El Bitcoin, la NUeva Commodity</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Conclusiones" href="intro-Copy2.html" />
+    <link rel="prev" title="El Bitcoin en el mercado de commodities" href="notebooks.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">El Bitcoin, la NUeva Commodity</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   ¿Qué es una criptomoneda?
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   El Bitcoin en el mercado de commodities
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Error del modelo de predicción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro-Copy2.html">
+   Conclusiones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro-Copy1.html">
+   Referencias
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/markdown.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">bokeh.io</span> <span class="kn">import</span> <span class="n">curdoc</span><span class="p">,</span> <span class="n">output_notebook</span>
+<span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="n">HoverTool</span><span class="p">,</span> <span class="n">ColumnDataSource</span><span class="p">,</span> <span class="n">CategoricalColorMapper</span><span class="p">,</span> <span class="n">Slider</span><span class="p">,</span> <span class="n">CustomJS</span>
+<span class="kn">from</span> <span class="nn">bokeh.palettes</span> <span class="kn">import</span> <span class="n">Spectral6</span>
+<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">widgetbox</span><span class="p">,</span> <span class="n">row</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span>
+<span class="kn">from</span> <span class="nn">bokeh.io</span> <span class="kn">import</span> <span class="n">push_notebook</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">output_notebook</span>
+<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">column</span>
+<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">Figure</span><span class="p">,</span> <span class="n">output_file</span><span class="p">,</span> <span class="n">show</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">from</span> <span class="nn">plotly.graph_objects</span> <span class="kn">import</span> <span class="n">Layout</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">plotly.figure_factory</span> <span class="k">as</span> <span class="nn">ff</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
+<span class="kn">import</span> <span class="nn">psycopg2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/jpdulcey/Trabajo_Final/main/Consolidado.csv&#39;</span><span class="p">,</span> <span class="p">)</span>
+<span class="nb">round</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;postgresql://vnnulziinextdf:dfcf04514600a32bd3d989cc5557e3adfa20feccc793e3444896b2ea98e4ff53@ec2-35-168-80-116.compute-1.amazonaws.com:5432/debjgeubaklpbb&#39;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;bitcoin_commodities&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span> <span class="o">=</span> <span class="s1">&#39;replace&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;multi&#39;</span><span class="p">)</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s2">&quot;vnnulziinextdf&quot;</span><span class="p">,</span>
+                                  <span class="n">password</span><span class="o">=</span><span class="s2">&quot;dfcf04514600a32bd3d989cc5557e3adfa20feccc793e3444896b2ea98e4ff53&quot;</span><span class="p">,</span>
+                                  <span class="n">host</span><span class="o">=</span><span class="s2">&quot;ec2-35-168-80-116.compute-1.amazonaws.com&quot;</span><span class="p">,</span>
+                                  <span class="n">port</span><span class="o">=</span><span class="s2">&quot;5432&quot;</span><span class="p">,</span>
+                                  <span class="n">database</span><span class="o">=</span><span class="s2">&quot;debjgeubaklpbb&quot;</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * from bitcoin_commodities;&quot;</span><span class="p">)</span>
+<span class="n">close</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+<span class="n">BTC_sql</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">close</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">BTC_sql</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT column_name FROM information_schema.columns WHERE table_name=&#39;bitcoin_commodities&#39;;&quot;</span><span class="p">)</span>
+<span class="n">BTC_names</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+<span class="n">display</span><span class="p">(</span><span class="n">BTC_names</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Operation done successfully&quot;</span><span class="p">)</span>
+<span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">names_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">BTC_names</span><span class="p">]</span>
+<span class="n">BTC_sql</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">names_list</span> 
+<span class="n">BTC_sql</span> <span class="o">=</span> <span class="n">BTC_sql</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">BTC_sql</span><span class="o">=</span><span class="n">BTC_sql</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;ffill&#39;</span><span class="p">)</span>
+<span class="n">BTC_sql</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">BTC_sql</span><span class="o">.</span><span class="n">Close_Bit</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">BTC_sql</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">BTC_sql</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">])</span>
+<span class="n">BTC_sql</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n_BTC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">BTC_sql</span><span class="o">.</span><span class="n">Close_Bit</span><span class="p">);</span> <span class="n">n_test</span> <span class="o">=</span> <span class="mi">28</span>
+<span class="n">train_size</span> <span class="o">=</span> <span class="n">n_BTC</span> <span class="o">-</span> <span class="n">n_test</span>
+
+<span class="n">train</span> <span class="o">=</span> <span class="n">BTC_sql</span><span class="o">.</span><span class="n">Close_Bit</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="n">train_size</span><span class="p">]</span>
+<span class="n">test_1w</span> <span class="o">=</span> <span class="n">BTC_sql</span><span class="o">.</span><span class="n">Close_Bit</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_size</span><span class="p">:</span><span class="n">train_size</span> <span class="o">+</span> <span class="n">n_test</span><span class="p">]</span> 
+<span class="n">dates_1w</span> <span class="o">=</span> <span class="n">BTC_sql</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_size</span><span class="p">:</span><span class="n">train_size</span> <span class="o">+</span> <span class="n">n_test</span><span class="p">]</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;train:&quot;</span><span class="p">,</span> <span class="n">train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_1w:&quot;</span><span class="p">,</span> <span class="n">test_1w</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">test_1w</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.tsa.arima.model</span> <span class="kn">import</span> <span class="n">ARIMA</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">best_aic</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<span class="n">best_bic</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+
+<span class="n">best_order</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">best_mdl</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="n">pq_rng</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">d_rng</span>  <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pq_rng</span><span class="p">:</span> 
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">d_rng</span><span class="p">:</span> 
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">pq_rng</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">tmp_mdl</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">j</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span> 
+                <span class="n">tmp_aic</span> <span class="o">=</span> <span class="n">tmp_mdl</span><span class="o">.</span><span class="n">aic</span>                
+                <span class="k">if</span> <span class="n">tmp_aic</span> <span class="o">&lt;</span> <span class="n">best_aic</span><span class="p">:</span> 
+                    <span class="n">best_aic</span> <span class="o">=</span> <span class="n">tmp_aic</span>
+                    <span class="n">best_order</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+                    <span class="n">best_mdl</span> <span class="o">=</span> <span class="n">tmp_mdl</span>
+            <span class="k">except</span><span class="p">:</span> <span class="k">continue</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;aic: </span><span class="si">{:6.5f}</span><span class="s1"> | order: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">best_aic</span><span class="p">,</span> <span class="n">best_order</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.tsa.arima.model</span> <span class="kn">import</span> <span class="n">ARIMA</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="p">(</span><span class="n">best_order</span><span class="p">),</span> <span class="n">enforce_stationarity</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;innovations_mle&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="error-del-modelo-de-prediccion">
+<h1>Error del modelo de predicción<a class="headerlink" href="#error-del-modelo-de-prediccion" title="Permalink to this headline">¶</a></h1>
+<p>El tamaño del error de proyección es bajo, (5%), entonces el modelo de predicción es muy bueno.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">El Bitcoin en el mercado de commodities</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="intro-Copy2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Conclusiones</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Por María José Meisel - Juan Pablo Dulcey<br/>
+        
+            &copy; Derechos de autor 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
